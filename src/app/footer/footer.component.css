@@ -1,5 +1,5 @@
 /* footer.component.css */
-
+/*
 footer {
   background-color: #f8f9fa;
   padding: 10px;
@@ -7,4 +7,17 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+} */
+
+/* footer.component.css */
+
+footer {
+  background-color: #343a40; /* Nouvelle couleur de fond */
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff; /* Couleur du texte */
+  font-size: 14px;
 }
