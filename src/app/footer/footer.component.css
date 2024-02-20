@@ -1,13 +1,19 @@
 /* footer.component.css */
-/*
-footer {
+
+/* footer {
   background-color: #f8f9fa;
   padding: 10px;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-} */
+  color: #fff; /* Couleur du texte */
+  /* font-size: 14px; */
+
+/* } */
+/* */
+
+/* footer.component.css */
 
 /* footer.component.css */
 
@@ -17,7 +23,9 @@ footer {
   text-align: center;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0; /* Étend la couleur à partir du bord gauche */
+  right: 0; /* Étend la couleur à partir du bord droit */
   color: #fff; /* Couleur du texte */
   font-size: 14px;
 }
+
