@@ -1,70 +1,13 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Connexion - Projet Réservation d'Hébergement</title>
-</head>
-<body>
-
-    <div class="container">
-        <form action="process_login.php" method="POST">
-            <h2>Connexion</h2>
-            <label for="username">Nom d'utilisateur :</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Mot de passe :</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Se connecter</button>
-        </form>
-    </div>
-
-</body>
-</html>
- -->
-
- <!-- connexion.component.html -->
-
-<!-- <div class="container">
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <h2>Connexion</h2>
-
-    <div>
-      <label for="username">Nom d'utilisateur :</label>
-      <input type="text" id="username" formControlName="username" required>
-    </div>
-
-    <div>
-      <label for="password">Mot de passe :</label>
-      <input type="password" id="password" formControlName="password" required>
-    </div>
-
-    <button type="submit">Se connecter</button>
-  </form>
-</div> -->
-
-
+ 
 <div class="container">
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <h2>Connexion</h2>
-
-  <form>
-    <div class="label-input-group">
-      <label for="username">Nom d'utilisateur :</label>
-      <input type="text" id="username" name="username" required>
-    </div>
-
-    <div class="label-input-group">
-      <label for="password">Mot de passe :</label>
-      <input type="password" id="password" name="password" required>
-    </div>
-    <a href="#">Mot de passe oublié ?</a>
-
-    <button type="submit">Se connecter</button>
-  </form>
-
-
-</form>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" formControlName="email">
+    
+      <label for="password">Mot de passe:</label>
+      <input type="password" id="password" formControlName="password">
+    
+      <button type="submit">Se connecter</button>
+    </form>
 </div>

@@ -1,0 +1,39 @@
+
+<!-- dashboard.component.html -->
+<div class="dashboard-container">
+    <div class="dashboard-header">
+      <h1>Dashboard</h1>
+      <p>Bienvenue sur votre tableau de bord</p>
+    </div>
+  
+    <div class="dashboard-content">
+      <!-- Contenu du tableau de bord ici -->
+      <div class="widget">
+        <h2>Statistiques</h2>
+        <!-- Ajoutez ici vos graphiques, statistiques, etc. -->
+      </div>
+  
+      <div class="widget">
+        <h2>Liste des utilisateurs</h2>
+        <!-- Ajoutez ici la liste des utilisateurs, par exemple, un tableau -->
+        <table>
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Email</th>
+              <th>Rôle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Utilisez des *ngFor pour afficher dynamiquement les utilisateurs -->
+            <tr *ngFor="let user of users">
+              <td>{{ user.name }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ user.roles}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
