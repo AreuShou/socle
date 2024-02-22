@@ -1,0 +1,26 @@
+<!-- gerer-clients.component.html -->
+
+<div>
+  <h2>Gérer les Clients</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of listeClients">
+        <td>{{ client.nom }}</td>
+        <td>{{ client.email }}</td>
+        <td>
+          <button (click)="supprimerClient(client)">Supprimer</button>
+          <button (click)="modifierClient(client)">Modifier</button>
+          <button (click)="voirReservations(client)">Voir Réservations</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

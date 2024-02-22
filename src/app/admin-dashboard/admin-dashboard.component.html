@@ -1,0 +1,27 @@
+<!-- admin-dashboard.component.html -->
+
+<div class="admin-dashboard-container">
+  <h2>Tableau de bord de l'administrateur</h2>
+  <!-- Ajoutez ici le contenu spécifique au tableau de bord de l'administrateur -->
+</div>
+
+
+<!-- admin-dashboard.component.html -->
+
+<div class="dashboard-container">
+  <div class="sidebar">
+    <!-- Contenu de la barre latérale (Liste des fonctionnalités, liens vers les pages, etc.) -->
+    <ul>
+      <li><a routerLink="/admin-dashboard/prestataires">Gérer Prestataires</a></li>
+      <li><a routerLink="/admin-dashboard/clients">Gérer Clients</a></li>
+      <li><a routerLink="/admin-dashboard/permissions">Gérer Permissions</a></li>
+      <li><a routerLink="/admin-dashboard/comptes">Voir Comptes</a></li>
+      <li><a routerLink="/admin-dashboard/notifications">Gérer Notifications</a></li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <!-- Contenu principal (Chargement des composants correspondants aux routes) -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

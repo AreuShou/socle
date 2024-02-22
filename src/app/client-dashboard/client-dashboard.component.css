@@ -1,0 +1,59 @@
+/* client-dashboard.component.css */
+
+/* .client-dashboard-container {
+  padding: 20px;
+} */
+
+/* client-dashboard.component.css */
+
+.client-dashboard-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
+}
+
+.client-info, .update-form, .add-form {
+  margin-bottom: 20px;
+}
+
+.client-info, .update-form, .add-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  color: #007bff;
+}
+
+label {
+  margin-bottom: 8px;
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+

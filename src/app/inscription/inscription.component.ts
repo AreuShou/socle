@@ -13,14 +13,14 @@ export class InscriptionComponent {
     password: '',
     password_confirmation: ''
   };
-   
+
   registerForm: any = {};
-  
+
 
   constructor(private fb: FormBuilder, private authService: AuthService,
     private route : ActivatedRoute,
     private router : Router)
-  {} 
+  {}
 
   ngOnInit(): void {
     this.registerForm = this.fb.group({
@@ -31,12 +31,20 @@ export class InscriptionComponent {
       email: ['', [Validators.required, Validators.email]],
       tel: ['', Validators.required],
       password: ['', [Validators.required, Validators.minLength(8)]],
-      password_confirmation: ['', Validators.required] 
+      password_confirmation: ['', Validators.required]
     });
   }
 
   onSubmit(): void {
+    // if (this.registerForm.valid) {
+    //   // Logique d'inscription
+    //   this.router.navigate(['/redirection']); // Rediriger vers la page de redirection
+    // }
+
+
     if (this.registerForm.valid) {
+
+      // this.router.navigate(['/redirection']);
     const userData = this.registerForm.value;
     this.authService.register(userData).subscribe(
       (response) => {
@@ -53,12 +61,12 @@ export class InscriptionComponent {
       console.log("Les mots de passe ne correspondent pas");
       return;
     }
-     
+
       this.router.navigate(['']);
-    
-  } 
+
+  }
   else {
     console.log("Le formulaire n'est pas valide");
-  } 
+  }
 }
 }

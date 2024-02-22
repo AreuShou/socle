@@ -1,0 +1,31 @@
+<!-- voir-comptes.component.html -->
+
+<div>
+  <h2>Voir les Comptes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Date de création</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Utilisez *ngFor pour afficher chaque utilisateur dans la liste -->
+      <tr *ngFor="let utilisateur of listeUtilisateurs">
+        <td>{{ utilisateur.nom }}</td>
+        <td>{{ utilisateur.email }}</td>
+        <td>{{ utilisateur.role }}</td>
+        <td>{{ utilisateur.dateCreation | date: 'dd/MM/yyyy HH:mm' }}</td>
+        <td>
+          <!-- Ajoutez des boutons pour les actions -->
+          <button (click)="modifierUtilisateur(utilisateur)">Modifier</button>
+          <button (click)="supprimerUtilisateur(utilisateur)">Supprimer</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

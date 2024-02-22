@@ -1,0 +1,54 @@
+<!-- client-dashboard.component.html -->
+
+<div class="client-dashboard-container">
+  <h2>Tableau de bord du client</h2>
+  <!-- Ajoutez ici le contenu spécifique au tableau de bord du client -->
+</div>
+
+<!-- client-dashboard.component.html -->
+
+<div class="client-dashboard-container">
+  
+  <!-- Informations du client -->
+  <div class="client-info">
+    <h3>Informations personnelles</h3>
+    <!-- Affichez les informations du client (nom, prénom, etc.) ici -->
+    <!-- Exemple : -->
+    <p>Nom : John Doe</p>
+    <p>Prénom : Jane Doe</p>
+    <!-- Ajoutez d'autres informations en fonction de vos besoins -->
+  </div>
+
+  <!-- Formulaire de modification des informations -->
+  <div class="update-form">
+    <h3>Modifier les informations</h3>
+    <form>
+      <!-- Ajoutez les champs de formulaire pour permettre au client de modifier ses informations -->
+      <!-- Exemple : -->
+      <label for="firstName">Nouveau prénom :</label>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="client.firstName">
+
+      <label for="lastName">Nouveau nom :</label>
+      <input type="text" id="lastName" name="lastName" [(ngModel)]="client.lastName">
+
+      <!-- Ajoutez d'autres champs en fonction de vos besoins -->
+
+      <button type="submit">Enregistrer les modifications</button>
+    </form>
+  </div>
+
+  <!-- Formulaire d'ajout de nouvelles informations -->
+  <div class="add-form">
+    <h3>Ajouter de nouvelles informations</h3>
+    <form>
+      <!-- Ajoutez les champs de formulaire pour permettre au client d'ajouter de nouvelles informations -->
+      <!-- Exemple : -->
+      <label for="newInfo">Nouvelle information :</label>
+      <input type="text" id="newInfo" name="newInfo" [(ngModel)]="newInfo">
+
+      <!-- Ajoutez d'autres champs en fonction de vos besoins -->
+
+      <button type="submit">Ajouter</button>
+    </form>
+  </div>
+</div>

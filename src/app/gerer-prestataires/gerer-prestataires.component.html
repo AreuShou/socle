@@ -1,0 +1,28 @@
+<!-- gerer-prestataires.component.html -->
+
+<div>
+  <h2>Gérer les Prestataires</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Utilisez *ngFor pour afficher chaque prestataire dans la liste -->
+      <tr *ngFor="let prestataire of listePrestataires">
+        <td>{{ prestataire.nom }}</td>
+        <td>{{ prestataire.email }}</td>
+        <td>
+          <!-- Ajoutez des boutons pour les actions -->
+          <button (click)="supprimerPrestataire(prestataire)">Supprimer</button>
+          <button (click)="attribuerAcces(prestataire)">Attribuer Accès</button>
+          <button (click)="communiquerAvecPrestataire(prestataire)">Communiquer</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

@@ -1,0 +1,12 @@
+<!-- gerer-notifications.component.html -->
+
+<div>
+  <h2>Gérer les Notifications</h2>
+  <ul>
+    <li *ngFor="let notification of listeNotifications">
+      {{ notification.contenu }}
+      <button (click)="marquerCommeLue(notification)">Marquer comme lue</button>
+      <button (click)="supprimerNotification(notification)">Supprimer</button>
+    </li>
+  </ul>
+</div>

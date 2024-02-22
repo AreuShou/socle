@@ -1,0 +1,89 @@
+/* admin-dashboard.component.css */
+
+/* .admin-dashboard-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+h2 {
+  color: #007bff;
+} */
+
+/* admin-dashboard.component.css */
+
+/* .dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+} */
+
+
+/* admin-dashboard.component.css */
+
+.admin-dashboard-container {
+  background-color: #fff; /* Couleur de fond pour le tableau de bord */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px; /* Largeur de la barre latérale */
+  background-color: #f8f9fa; /* Couleur de fond pour la barre latérale */
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333; /* Couleur du texte pour les liens */
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #007bff; /* Couleur de fond au survol */
+  color: #fff; /* Couleur du texte au survol */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}

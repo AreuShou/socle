@@ -1,0 +1,68 @@
+<!-- prestataire-dashboard.component.html -->
+
+<div class="prestataire-dashboard-container">
+  <h2>Tableau de bord du prestataire</h2>
+  <!-- Ajoutez ici le contenu spécifique au tableau de bord du prestataire -->
+</div>
+
+<!-- prestataire-dashboard.component.html -->
+
+<div class="prestataire-dashboard-container">
+ 
+  <!-- Informations du prestataire -->
+  <div class="prestataire-info">
+    <h3>Informations personnelles</h3>
+    <!-- Affichez les informations du prestataire (nom, type d'hébergement, etc.) ici -->
+    <!-- Exemple : -->
+    <p>Nom : Prestataire XYZ</p>
+    <p>Type d'hébergement : Hôtel</p>
+    <!-- Ajoutez d'autres informations en fonction de vos besoins -->
+  </div>
+
+  <!-- Formulaire de modification des informations -->
+  <div class="update-form">
+    <h3>Modifier les informations</h3>
+    <form>
+      <!-- Ajoutez les champs de formulaire pour permettre au prestataire de modifier ses informations -->
+      <!-- Exemple : -->
+      <label for="prestataireName">Nouveau nom :</label>
+      <input type="text" id="prestataireName" name="prestataireName" [(ngModel)]="prestataireName">
+
+      <label for="typeHebergement">Nouveau type d'hébergement :</label>
+      <input type="text" id="typeHebergement" name="typeHebergement" [(ngModel)]="typeHebergement">
+
+      <!-- Ajoutez d'autres champs en fonction de vos besoins -->
+
+      <button type="submit">Enregistrer les modifications</button>
+    </form>
+  </div>
+
+  <!-- Section pour gérer les hébergements -->
+  <div class="gerer-hebergements">
+    <h3>Gérer les hébergements</h3>
+    <!-- Liste des hébergements avec possibilité de retirer -->
+    <!-- Ajoutez ici la logique pour afficher et gérer les hébergements -->
+  </div>
+
+  <!-- Formulaire pour ajouter un nouvel hébergement -->
+  <div class="ajouter-hebergement">
+    <h3>Ajouter un nouvel hébergement</h3>
+    <form>
+      <!-- Ajoutez les champs de formulaire pour ajouter un nouvel hébergement -->
+      <!-- Exemple : -->
+      <label for="nomHebergement">Nom de l'hébergement :</label>
+      <input type="text" id="nomHebergement" name="nomHebergement" [(ngModel)]="nomHebergement">
+
+      <!-- Ajoutez d'autres champs en fonction de vos besoins -->
+
+      <button type="submit">Ajouter l'hébergement</button>
+    </form>
+  </div>
+
+  <!-- Section pour proposer des promotions -->
+  <div class="proposer-promotions">
+    <h3>Proposer des promotions</h3>
+    <!-- Ajoutez ici la logique pour proposer des promotions sur les hébergements -->
+  </div>
+</div>
+

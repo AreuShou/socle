@@ -1,0 +1,12 @@
+<!-- gerer-commentaires.component.html -->
+
+<div>
+  <h2>Gérer les Commentaires</h2>
+  <ul>
+    <li *ngFor="let commentaire of listeCommentaires">
+      {{ commentaire.contenu }}
+      <button (click)="supprimerCommentaire(commentaire)">Supprimer</button>
+    </li>
+  </ul>
+</div>
+

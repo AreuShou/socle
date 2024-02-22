@@ -46,7 +46,7 @@
 </div> -->
 
 
-<div class="container">
+<!-- <div class="container">
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <h2>Connexion</h2>
 
@@ -67,4 +67,28 @@
 
 
 </form>
+</div> -->
+
+<!-- connexion.component.html -->
+<div class="container">
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <h2>Connexion</h2>
+    <form>
+      <div class="label-input-group">
+        <label for="username">Email :</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="label-input-group">
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <a href="#">Mot de passe oublié ?</a>
+
+      <button type="submit">Se connecter</button>
+    </form>
+</form>
+
 </div>
+
