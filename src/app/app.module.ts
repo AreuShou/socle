@@ -13,7 +13,6 @@ import { FooterComponent } from './footer/footer.component';
 
 import { AuthService } from './auth.service';
 import { LoginService } from './login.service';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { PrestataireDashboardComponent } from './prestataire-dashboard/prestataire-dashboard.component';
 import { ClientDashboardComponent } from './client-dashboard/client-dashboard.component';
@@ -41,7 +40,7 @@ const routes: Routes = [
     AccueilComponent,
     HeaderComponent,
     FooterComponent,
-    DashboardComponent,
+
     AdminDashboardComponent,
     PrestataireDashboardComponent,
     ClientDashboardComponent,
