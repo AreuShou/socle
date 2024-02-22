@@ -11,6 +11,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
+
 import { AuthService } from './auth.service';
 import { LoginService } from './login.service';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
@@ -40,7 +41,6 @@ const routes: Routes = [
     AccueilComponent,
     HeaderComponent,
     FooterComponent,
-
     AdminDashboardComponent,
     PrestataireDashboardComponent,
     ClientDashboardComponent,
@@ -51,6 +51,7 @@ const routes: Routes = [
     GererNotificationsComponent,
     VoirComptesComponent,
     GererCommentairesComponent
+
   ],
   imports: [
     BrowserModule,
@@ -59,6 +60,7 @@ const routes: Routes = [
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
+
   ],
   providers: [
     AuthService,
