@@ -63,7 +63,7 @@ export class ConnexionComponent implements OnInit {
       },
       (error) => {
         console.error('Erreur lors de la connexion', error);
-        // Ajoutez ici la gestion d'erreurs, par exemple afficher un message d'erreur à l'utilisateur
+        // Ajoutez ici la gestion d'erreurs, par exemple afficher un message d'erreur à l'utilisateur ok c'est bien compris
       }
     );
 
